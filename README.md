@@ -14,7 +14,7 @@ Want to know the number of users that clicked on the button "View More"? There y
 
 # Examples
 ### Creating a counter and/or hitting it to increase its value
-'''js
+```js
 fetch('https://my-own-counter-api-production.up.railway.app/hit/example/example', {
   method: 'POST'
 })
@@ -25,9 +25,9 @@ fetch('https://my-own-counter-api-production.up.railway.app/hit/example/example'
 .catch(error => {
   console.error('Error:', error); // Handle errors
 });
-'''
+```
 ### Getting a counters value
-'''js
+```js
 fetch('https://my-own-counter-api-production.up.railway.app/get/me/test', {
   method: 'GET'
 })
@@ -38,9 +38,9 @@ fetch('https://my-own-counter-api-production.up.railway.app/get/me/test', {
 .catch(error => {
   console.error('Error:', error); // Handle errors
 });
-'''
+```
 ### Setting a counters value
-'''js
+```js
 fetch('https://my-own-counter-api-production.up.railway.app/set/me/test?value=23', {
   method: 'PUT'
 })
@@ -51,7 +51,7 @@ fetch('https://my-own-counter-api-production.up.railway.app/set/me/test?value=23
 .catch(error => {
   console.error('Error:', error); // Handle errors
 });
-'''
+```
 ## Multiple pages
 if you want to have a counter for each individual page you can replace visits with a unique identifier for each page, i.e index, contact, item-1, item-2. 
 
