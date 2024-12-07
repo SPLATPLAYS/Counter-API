@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter API Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calculator"></i> Counter API Demo</h1>
+            <p class="subtitle">A simple, powerful API for tracking numeric counters across your applications</p>
+        </header>
+
+        <div class="theme-switch">
+            <button id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-plus-circle"></i>
+                <h3>Create & Increment</h3>
+                <p>Create new counters or increment existing ones</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-eye"></i>
+                <h3>Track Values</h3>
+                <p>Monitor your counter values in real-time</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-edit"></i>
+                <h3>Custom Values</h3>
+                <p>Set specific values for your counters</p>
+            </div>
+        </div>
+
+        <div class="demo-container">
+            <h2>Try it yourself!</h2>
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <label for="namespace">Namespace</label>
+                    <input type="text" id="namespace" placeholder="e.g., myapp">
+                </div>
+                <div class="input-wrapper">
+                    <label for="key">Key</label>
+                    <input type="text" id="key" placeholder="e.g., pageviews">
+                </div>
+                <div class="input-wrapper">
+                    <label for="newValue">New Value (optional)</label>
+                    <input type="number" id="newValue" placeholder="Set specific value">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button onclick="createOrIncrementCounter()" class="btn primary">
+                    <i class="fas fa-plus"></i> Create/Increment
+                </button>
+                <button onclick="getCounterValue()" class="btn secondary">
+                    <i class="fas fa-eye"></i> Get Value
+                </button>
+                <button onclick="setCounterValue()" class="btn tertiary">
+                    <i class="fas fa-edit"></i> Set Value
+                </button>
+            </div>
+
+            <div id="result" class="result-container">
+                <div class="result-content">
+                    Ready to start counting!
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
